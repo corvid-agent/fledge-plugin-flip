@@ -1,0 +1,29 @@
+[plugin]
+name = "flip"
+version = "1.1.0"
+description = "Quick random decisions — coin flip, dice roll, pick from options"
+author = "corvid-agent"
+license = "MIT"
+repository = "https://github.com/corvid-agent/fledge-plugin-flip"
+keywords = ["flip", "coin", "dice", "random", "pick", "decision"]
+min_fledge_version = "0.10.0"
+
+[plugin.commands.coin]
+description = "Flip a coin — heads or tails"
+usage = "fledge flip coin [--count N]"
+
+[plugin.commands.dice]
+description = "Roll dice"
+usage = "fledge flip dice [--sides N] [--count N]"
+
+[plugin.commands.pick]
+description = "Pick a random item from a list"
+usage = "fledge flip pick <ITEM1> <ITEM2> [ITEM3...]"
+
+[plugin.commands.number]
+description = "Generate a random number in a range"
+usage = "fledge flip number <MIN> <MAX>"
+
+[plugin.commands.yn]
+description = "Random yes or no"
+usage = "fledge flip yn"
